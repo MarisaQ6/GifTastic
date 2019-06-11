@@ -8,7 +8,6 @@
 <head>
     <meta charset="utf-8">
     <title>GifTastic Garfield!</title>
-    <div id="images"></div>
     <!-- links here -->
     <script src="https://kit.fontawesome.com/355bc00d85.js"></script>
     <!-- bootstrap here -->
@@ -18,14 +17,7 @@
     <!-- jquery here -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- javascript here -->
-    <script type="text/javascript"></script>
-
-    <!-- create garfield button for user to click -->
-    $("garfield-buttons").on("click", function({
-
-
-    }))
-
+    <script type="text/javascript"></script> 
 </head>
 
 <body>
@@ -36,7 +28,21 @@
         <br>
         <div class="container" id="btn" style="background: transparent;"></div>
         <br>
-        
+        <!-- create garfield button for user to click -->
+    $("garfield-buttons").on("click", function({
+
+        <!-- queryURL for GIPHY API -->
+        var queryURL = "https://api.giphy.com/v1/gifs/random?api_key=xaD2pIjIBEGCOoGF2EpNwyLtcY0nY9Ye";
+
+        <!-- ajax here -->
+        $.ajax({
+            url: queryURL,
+            method: "GET"
+        })
+
+
+    }))
+
 
     
     
