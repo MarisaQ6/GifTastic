@@ -16,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <!-- jquery here -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link href="http://allfont.net/allfont.css?fonts=garfield" rel="stylesheet" type="text/css" />
+    <!-- <link href="http://allfont.net/allfont.css?fonts=garfield" rel="stylesheet" type="text/css" /> -->
 </head>
 
 <body>
@@ -27,46 +27,16 @@
         <br>
         <div class="container" id="btn" style="background: transparent;"></div>
         <br>
-        <!-- create garfield button for user to click -->
-    $("garfield-buttons").on("click", function({
-
-        <!-- queryURL for GIPHY API -->
-        var queryURL = "https://api.giphy.com/v1/gifs/random?api_key=xaD2pIjIBEGCOoGF2EpNwyLtcY0nY9Ye";
-
-        <!-- ajax here -->
-        $.ajax({
-            url: queryURL,
-            method: "GET"
-        })
-
-        console.log(response)
-
-        <!-- creat the states of pause and go -->
-
-        let state = $(this).attr("data-state");
-
-        if(state === 'still'){
-            $(this).attr("src",$(this).attr("data-animate"));
-            $(this).attr("data-state", "animate");
-
-        else {
-            $(this).attr("src",$(this).attr("data-still"));
-            $(this).attr("data-state","still");
-
-        }
-
-        }
-
-
-
-    }))
-
+    </div>
 
     
+        
+
+            
     <!-- javascript here -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript">
-    </div>
+  <script type="text/javascript" src="assets/javascript/giphy.js"></script>
+    
     
 </body>
 </html>
