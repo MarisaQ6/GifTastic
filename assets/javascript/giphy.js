@@ -2,20 +2,37 @@
 // xaD2pIjIBEGCOoGF2EpNwyLtcY0nY9Ye
 
 // <!-- create garfield button for user to click -->
-    $("garfield-buttons").on("click", function(){
+    $("#garfield-buttons").on("click", function(){
 
         // <!-- queryURL for GIPHY API -->
         var queryURL = "https://api.giphy.com/v1/gifs/random?api_key=xaD2pIjIBEGCOoGF2EpNwyLtcY0nY9Ye";
 
-        // <!-- ajax here -->
+        // Rendered buttons here
+        <div id="buttons-view"></div>
+
+        <form id="garfield-input">
+            <label for="garfield-input">Add Your Favorite Garfield here!</label>
+            <input type="text" id = "garfield-input"><br>
+            </br>
+
+            <input id="add-garfield" type="submit" value="Add Your Favorite Garfield here!"></input>
+        
+
+
+
+
+
+
+        {/* // <!-- ajax here --> */}
         $.ajax({
             url: queryURL,
             method: "GET"
-        })
+        }).then(function(response){
+            console.log(response)
+            $("#garfield-buttons").text(JSON.stringify(response));
+        });
 
-        console.log(response)
-
-        // Giphys here
+        {/* // Giphys here */}
 
         <div class="container">
             <h1>Garfield Giphys</h1>
@@ -29,11 +46,11 @@
         <input id="add-giphy" type="submit" value="Garfield Search Here!"></input>
         </form>
 
-        
 
-        {/* Trigger buttons */}
 
-        // <!-- creat the states of pause and go -->
+        {/* /* Trigger buttons */ */}
+
+        {/* // <!-- creat the states of pause and go --> */}
 
         let state = $(this).attr("data-state");
 
