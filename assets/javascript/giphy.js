@@ -8,14 +8,14 @@
         var queryURL = "https://api.giphy.com/v1/gifs/random?api_key=xaD2pIjIBEGCOoGF2EpNwyLtcY0nY9Ye";
 
         // Rendered buttons here
-        <div id="buttons-view"></div>
+        // <div id="buttons-view"></div>
 
-        <form id="garfield-input">
-            <label for="garfield-input">Add Your Favorite Garfield here!</label>
-            <input type="text" id = "garfield-input"><br>
-            </br>
+        // <form id="garfield-input">
+            // <label for="garfield-input">Add Your Favorite Garfield here!</label>
+            // <input type="text" id = "garfield-input"><br>
+            // </br>
 
-            <input id="add-garfield" type="submit" value="Add Your Favorite Garfield here!"></input>
+            // <input id="add-garfield" type="submit" value="Add Your Favorite Garfield here!"></input>
         
 
 
@@ -34,23 +34,23 @@
 
         {/* // Giphys here */}
 
-        <div class="container">
-            <h1>Garfield Giphys</h1>
+        {/* <div class="container"> */}
+            // <h1>Garfield Giphys</h1>
 
-            <div id="buttons-view"></div> here
+            // <div id="buttons-view"></div> here
 
-        <form id="garfield-giphy">
-            <label for="giphy-input">Garfield Search Here!</label>
-            <input type="text" id="giphy-input"></input>
+        // <form id="garfield-giphy">
+            // <label for="giphy-input">Garfield Search Here!</label>
+            // <input type="text" id="giphy-input"></input>
 
-        <input id="add-giphy" type="submit" value="Garfield Search Here!"></input>
-        </form>
+        // <input id="add-giphy" type="submit" value="Garfield Search Here!"></input>
+        // </form>
 
 
 
-        {/* /* Trigger buttons */ */}
+        // {/* /* Trigger buttons */ */}
 
-        {/* // <!-- creat the states of pause and go --> */}
+        // {/* // <!-- creat the states of pause and go --> */}
 
         let state = $(this).attr("data-state");
 
