@@ -7,6 +7,14 @@
         // <!-- queryURL for GIPHY API -->
         var queryURL = "https://api.giphy.com/v1/gifs/random?api_key=xaD2pIjIBEGCOoGF2EpNwyLtcY0nY9Ye";
 
+        var garfield = ["Garfield Sleeping", "Garfield Eating", "Garfield & Odie", "Garfield & John", "Garfield & Pookie", "Garfield & Nermal", "Garfield & Arlene"];
+
+        function displayGifyInfo() {
+
+            
+        }
+
+
         // Rendered buttons here
         // <div id="buttons-view"></div>
 
